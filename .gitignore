@@ -205,3 +205,304 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+# Создано https://www.toptal.com/developers/gitignore/api/windows,python, visualstudiocode,тест
+# Редактировать в https://www.toptal.com/developers/gitignore?templates=windows,python, visualstudiocode,тест
+
+### Python ###
+# Скомпилированные в байтах / оптимизированные / DLL файлы
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Расширения C 
+*.so
+
+# Дистрибутив / упаковка
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+# Обычно эти файлы создаются скриптом на Python на основе шаблона
+# перед тем, как PyInstaller соберет исполняемый файл, чтобы добавить в него дату и другую информацию.
+*.manifest
+*.spec
+
+# Журналы установщика
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Отчеты о модульных тестах / покрытии кода
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Переводы
+*.mo
+*.pot
+
+# Файлы Django:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Файлы Flask:
+instance/
+.webassets-cache
+
+# Файлы Scrapy:
+.scrapy
+
+# Документация Sphinx
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+# Для библиотеки или пакета вы можете проигнорировать эти файлы, поскольку код
+# предназначен для запуска в нескольких средах; в противном случае проверьте их в:
+# .python-версия
+
+# pipenv
+# Согласно pypa / pipenv # 598, рекомендуется включать Pipfile.блокировка в системе управления версиями.
+# Однако, в случае совместной работы, при наличии зависимостей от конкретной платформы или dependencies
+# при отсутствии кроссплатформенной поддержки pipenv может установить зависимости, которые не работают, или нет
+# установите все необходимые зависимости.
+#Pipfile.блокировка
+
+# poetry
+# Аналогично Pipfile.lock, обычно рекомендуется включать poetry.блокировка в системе управления версиями.
+# Это особенно рекомендуется для двоичных пакетов для обеспечения воспроизводимости и чаще всего игнорируется для библиотек.
+#
+# https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+#poetry.lock
+
+# pdm
+# Аналогично Pipfile.lock, обычно рекомендуется включать pdm.lock в систему управления версиями.
+#pdm.lock
+# pdm хранит конфигурации всего проекта в .pdm.toml, но рекомендуется не включать его
+# в системе управления версиями.
+# https://pdm.fming.dev/#use-with-ide
+.pdm.toml
+
+# PEP 582; используется, например, в github.com/David-OConnor/pyflow и github.com/pdm-project/pdm
+__pypackages__/
+
+# Для Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Файлы, обработанные SageMath
+*.sage.py
+
+# Среды
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Настройки проекта Spyder
+.spyderproject
+.spyproject
+
+# Настройки проекта Rope
+.ropeproject
+
+# Документация mkdocs
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Средство проверки типов Pyre
+.pyre/
+
+# Статический анализатор типов pytype
+.pytype/
+
+# Отладочные символы Cython
+cython_debug/
+
+# PyCharm
+# Шаблон, специфичный для JetBrains, хранится в отдельном файле JetBrains.gitignore, который можно
+# найти по адресу https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+# и добавить в глобальный файл gitignore или объединить с этим файлом.  Для более радикального
+# варианта (не рекомендуется) можно раскомментировать следующую строку, чтобы игнорировать всю папку idea.
+#.idea/
+
+### Патч для Python ###
+# Файл локальной конфигурации Poetry — https://python-poetry.org/docs/configuration/#local-configuration
+poetry.toml
+
+# ruff
+.ruff_cache/
+
+# Файлы конфигурации LSP
+pyrightconfig.json
+
+### Тестирование ###
+### Игнорировать все файлы, которые могут использоваться для тестирования кода и
+### вы бы не захотели нажимать
+
+# Ссылка https://en.wikipedia.org/wiki/Metasyntactic_variable
+
+# Наиболее распространенные
+*foo
+*bar
+*fubar
+*foobar
+*baz
+
+# Менее распространенные
+*qux
+*quux
+*bongo
+*bazola
+*ztesch
+
+# Великобритания, Австралия
+*wibble
+*wobble
+*wubble
+*flob
+*blep
+*blah
+*boop
+*beep
+
+# Японский
+*hoge
+*piyo
+*fuga
+*hogera
+*hogehoge
+
+# Португалия, Испания
+*fulano
+*sicrano
+*beltrano
+*mengano
+*perengano
+*zutano
+
+# Франция, Италия, Нидерланды
+*toto
+*titi
+*tata
+*туту
+* пиппо
+* плутон
+* паперино
+*аап
+* нут
+* мис
+
+# Другие названия, которые имели бы смысл
+* тесты
+*testsdir
+*testsfile
+* testsfiles
+#*test
+* testdir
+* testfile
+* testfiles
+* тестирование
+* testingdir
+* testingfile
+*testingfiles
+* temp
+* tempdir
+* tempfile
+* временные файлы
+*tmp
+*tmpdir
+*tmpfile
+*tmpfiles
+*lol
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/настройки.json 
+!.vscode/задачи.json 
+!.vscode/запуск.json 
+!.vscode/расширения.json 
+!.vscode/*.фрагменты кода
+
+# Локальная история кода Visual Studio 
+.история/
+
+# Встроенные расширения кода Visual Studio 
+* .vsix
+
+### Исправление VisualStudioCode ###
+# Игнорировать всю локальную историю файлов
+.history
+.ionide
+
+### Windows ###
+# Файлы кэша миниатюр Windows
+Thumbs.db
+Thumbs.db: шифруемый
+ehthumbs.db
+ehthumbs_vista.db
+
+# Файл дампа
+*.stackdump
+
+# Файл конфигурации папки
+[Dd]esktop.ini
+
+# Корзина, используемая в общих файловых ресурсах
+$RECYCLE.BIN/
+
+# Файлы установщика Windows
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.flake8
+# Ярлыки Windows
+*.lnk
+
+# Конец https://www.toptal.com/developers/gitignore/api/windows,python,visualstudiocode,test
